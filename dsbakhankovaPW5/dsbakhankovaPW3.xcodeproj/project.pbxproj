@@ -16,6 +16,12 @@
 		197386EE292ACFE700C92705 /* ShortNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197386ED292ACFE700C92705 /* ShortNote.swift */; };
 		1983052A292D023C007C98A9 /* AddNoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19830529292D023C007C98A9 /* AddNoteCell.swift */; };
 		1983052C292D1A11007C98A9 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1983052B292D1A11007C98A9 /* NoteCell.swift */; };
+		19AD7C88293F68370094268C /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AD7C87293F68370094268C /* NewsListViewController.swift */; };
+		19AD7C8A293F71730094268C /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AD7C89293F71730094268C /* NewsCell.swift */; };
+		19AD7C8C293F74EC0094268C /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AD7C8B293F74EC0094268C /* NewsViewModel.swift */; };
+		19AD7C90293F94AB0094268C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AD7C8F293F94AB0094268C /* NewsViewController.swift */; };
+		19AD7C9329423E5F0094268C /* ApiServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AD7C9229423E5F0094268C /* ApiServise.swift */; };
+		19AD7C95294241480094268C /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AD7C94294241480094268C /* ApiResponse.swift */; };
 		19F2A75F29100B3A008E8063 /* UIView_Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F2A75E29100B3A008E8063 /* UIView_Pin.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +37,12 @@
 		197386ED292ACFE700C92705 /* ShortNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortNote.swift; sourceTree = "<group>"; };
 		19830529292D023C007C98A9 /* AddNoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteCell.swift; sourceTree = "<group>"; };
 		1983052B292D1A11007C98A9 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		19AD7C87293F68370094268C /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		19AD7C89293F71730094268C /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		19AD7C8B293F74EC0094268C /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		19AD7C8F293F94AB0094268C /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		19AD7C9229423E5F0094268C /* ApiServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServise.swift; sourceTree = "<group>"; };
+		19AD7C94294241480094268C /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		19F2A75E29100B3A008E8063 /* UIView_Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Pin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,14 +76,13 @@
 		1931BFC4290F041A0004271C /* dsbakhankovaPW3 */ = {
 			isa = PBXGroup;
 			children = (
+				19AD7C91293FB06D0094268C /* Api */,
+				19AD7C86293F68280094268C /* News */,
+				19AD7C8E293F94110094268C /* Pin */,
+				19AD7C8D293F93800094268C /* Notes */,
 				1931BFD9290F25EA0004271C /*  ColorPaletteView */,
 				1931BFC5290F041A0004271C /* AppDelegate.swift */,
-				19F2A75E29100B3A008E8063 /* UIView_Pin.swift */,
 				1931BFC9290F041A0004271C /* ViewController.swift */,
-				197386EB292AC32500C92705 /* NotesViewController.swift */,
-				197386ED292ACFE700C92705 /* ShortNote.swift */,
-				1983052B292D1A11007C98A9 /* NoteCell.swift */,
-				19830529292D023C007C98A9 /* AddNoteCell.swift */,
 				1931BFCE290F041E0004271C /* Assets.xcassets */,
 				1931BFD0290F041E0004271C /* LaunchScreen.storyboard */,
 				1931BFD3290F041E0004271C /* Info.plist */,
@@ -85,6 +96,45 @@
 				1931BFDA290F260D0004271C /*  ColorPaletteView .swift */,
 			);
 			path = " ColorPaletteView";
+			sourceTree = "<group>";
+		};
+		19AD7C86293F68280094268C /* News */ = {
+			isa = PBXGroup;
+			children = (
+				19AD7C87293F68370094268C /* NewsListViewController.swift */,
+				19AD7C89293F71730094268C /* NewsCell.swift */,
+				19AD7C8B293F74EC0094268C /* NewsViewModel.swift */,
+				19AD7C8F293F94AB0094268C /* NewsViewController.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		19AD7C8D293F93800094268C /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				197386EB292AC32500C92705 /* NotesViewController.swift */,
+				197386ED292ACFE700C92705 /* ShortNote.swift */,
+				1983052B292D1A11007C98A9 /* NoteCell.swift */,
+				19830529292D023C007C98A9 /* AddNoteCell.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		19AD7C8E293F94110094268C /* Pin */ = {
+			isa = PBXGroup;
+			children = (
+				19F2A75E29100B3A008E8063 /* UIView_Pin.swift */,
+			);
+			path = Pin;
+			sourceTree = "<group>";
+		};
+		19AD7C91293FB06D0094268C /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				19AD7C9229423E5F0094268C /* ApiServise.swift */,
+				19AD7C94294241480094268C /* ApiResponse.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +220,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -179,12 +230,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19AD7C8A293F71730094268C /* NewsCell.swift in Sources */,
+				19AD7C9329423E5F0094268C /* ApiServise.swift in Sources */,
 				1931BFDB290F260D0004271C /*  ColorPaletteView .swift in Sources */,
+				19AD7C95294241480094268C /* ApiResponse.swift in Sources */,
 				197386EC292AC32500C92705 /* NotesViewController.swift in Sources */,
+				19AD7C90293F94AB0094268C /* NewsViewController.swift in Sources */,
 				197386EE292ACFE700C92705 /* ShortNote.swift in Sources */,
 				1931BFCA290F041A0004271C /* ViewController.swift in Sources */,
 				1983052A292D023C007C98A9 /* AddNoteCell.swift in Sources */,
+				19AD7C8C293F74EC0094268C /* NewsViewModel.swift in Sources */,
 				19F2A75F29100B3A008E8063 /* UIView_Pin.swift in Sources */,
+				19AD7C88293F68370094268C /* NewsListViewController.swift in Sources */,
 				1931BFC6290F041A0004271C /* AppDelegate.swift in Sources */,
 				1983052C292D1A11007C98A9 /* NoteCell.swift in Sources */,
 			);
